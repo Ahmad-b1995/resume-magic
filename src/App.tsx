@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Section1 from "./components/section1";
+import Section1 from "./components/section1/section1";
 
 class App extends React.Component {
   handleClick = (num: number) => {
