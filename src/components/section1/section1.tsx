@@ -1,24 +1,7 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import "./section1.css";
 
-interface IState {
-  name?: string;
-  lastName?: string;
-}
-
-export default class Section1 extends Component<any, IState> {
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      name: "Name",
-      lastName: "LastName",
-    };
-  }
-
-  emit(e: any) {
-    this.setState({ name: "kjkj" });
-  }
-
+export default class Section1 extends Component<any> {
   render() {
     return (
       <div>
@@ -26,43 +9,69 @@ export default class Section1 extends Component<any, IState> {
           <input
             type="text"
             className="name"
-            onChange={(e) => this.props.handleClick(100)}
-            placeholder={`${this.state.name} ${this.state.lastName}`}
+            placeholder="Name Lastname"
+            onChange={(e) => this.props.handleClick("name", e.target.value)}
           />
           <ul className="socialmedia-list">
             <li>
               <i className="fa fa-home"></i>
-              Tehran, Iran
+              <input
+                type="text"
+                placeholder="country, state"
+                onChange={(e) =>
+                  this.props.handleClick("country", e.target.value)
+                }
+              />
             </li>
             <li>
               <i className="fa fa-globe"></i>
-              <a href="https://AhmadCodes.com">https://AhmadCodes.com</a>
+              <input
+                type="text"
+                placeholder="website.com"
+                onChange={(e) =>
+                  this.props.handleClick("website", e.target.value)
+                }
+              />
             </li>
             <li>
               <i className="fa-brands fa-linkedin-in"></i>
-              <a href="https://www.linkedin.com/in/ahmad-baghereslami-625ab711b">
-                https://www.linkedin.com/in/ahmad-baghereslami-625ab711b
-              </a>
+              <input
+                type="text"
+                placeholder="LinkedIn"
+                onChange={(e) =>
+                  this.props.handleClick("linkedIn", e.target.value)
+                }
+              />
             </li>
             <li>
               <i className="fa-brands fa-github"></i>
-              <a href="https://github.com/Ahmad-b1995">
-                https://github.com/Ahmad-b1995
-              </a>
-            </li>
-            <li>
-              <i className="fa-brands fa-youtube"></i>
-              <a href="https://www.youtube.com/channel/UChCFeeyBW31iEuyCXyCgfhQ/">
-                https://www.youtube.com/channel/UChCFeeyBW31iEuyCXyCgfhQ/
-              </a>
+              <input
+                type="text"
+                placeholder="github"
+                onChange={(e) =>
+                  this.props.handleClick("github", e.target.value)
+                }
+              />
             </li>
             <li>
               <i className="fa fa-envelope"></i>
-              <a href="mailto:ahmad.b1995@gmail.com">ahmad.b1995@gmail.com</a>
+              <input
+                type="text"
+                placeholder="email"
+                onChange={(e) =>
+                  this.props.handleClick("email", e.target.value)
+                }
+              />
             </li>
             <li>
               <i className="fa fa-phone"></i>
-              <a href="tel:+989129274652">+989129274652</a>
+              <input
+                type="text"
+                placeholder="phoneNumber"
+                onChange={(e) =>
+                  this.props.handleClick("phoneNumber", e.target.value)
+                }
+              />
             </li>
           </ul>
         </div>
