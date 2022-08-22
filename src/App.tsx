@@ -49,31 +49,58 @@ class App extends React.Component {
                 style: "name",
               },
               {
-                text: this.resume.website,
+                text: [
+                  { text: "\ue800", style: "icon" },
+                  "  ",
+                  this.resume.country,
+                ],
                 style: "info",
               },
               {
-                text: this.resume.linkedIn,
+                text: [
+                  { text: "\ue801", style: "icon" },
+                  "  ",
+                  this.resume.website,
+                ],
                 style: "info",
               },
               {
-                text: this.resume.github,
+                text: [
+                  { text: "\uf0e1", style: "icon" },
+                  "  ",
+                  this.resume.linkedIn,
+                ],
                 style: "info",
               },
-              { text: "\ue800", style: "icon" },
               {
-                text: this.resume.email,
+                text: [
+                  { text: "\uf09b", style: "icon" },
+                  "  ",
+                  this.resume.github,
+                ],
                 style: "info",
               },
               {
-                text: this.resume.phoneNumber,
+                text: [
+                  { text: "\uf0e0", style: "icon" },
+                  "  ",
+                  this.resume.email,
+                ],
+                style: "info",
+              },
+              {
+                text: [
+                  { text: "\ue803", style: "icon" },
+                  "  ",
+                  this.resume.phoneNumber,
+                ],
                 style: "info",
               },
             ],
           ],
         },
       ],
-      pageMargins: 10,
+      pageMargins: 25,
       styles: {
         name: {
           fontSize: 14,
@@ -84,12 +111,12 @@ class App extends React.Component {
         info: {
           fontSize: 11,
           color: "#5b6e80",
-          marginBottom: 5,
+          marginBottom: 10,
         },
         icon: {
           font: "Fa",
-          fontSize: 200,
-          color: "black",
+          color: "#5b6e80",
+          fontSize: 11,
         },
       },
     };
