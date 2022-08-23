@@ -4,9 +4,11 @@ import Section1 from "./components/section1/section1";
 import { Resume } from "./models/resume";
 import pdfMake from "pdfmake/build/pdfmake";
 import { vfs } from "./assets/fonts/vfs_fonts.js";
-// import * as pdfFonts from "./assets/fonts/vfs_fonts";
-// pdfMake.vfs = pdfFonts.pdfMake.vfs;
-// import { useEffect, useRef, useState } from "react";
+import Section2 from './components/section2/section2';
+import Section3 from './components/section3/section3';
+import Section4 from './components/section4/section4';
+import Section5 from './components/section5/section5';
+import Section6 from './components/section6/section6';
 pdfMake.vfs = vfs;
 
 class App extends React.Component {
@@ -126,6 +128,11 @@ class App extends React.Component {
     return (
       <div className="App">
         <Section1 handleClick={this.handleClick}></Section1>
+        <Section2 handleClick={this.handleClick}></Section2>
+        <Section3 handleClick={this.handleClick}></Section3>
+        <Section4 handleClick={this.handleClick}></Section4>
+        <Section5 handleClick={this.handleClick}></Section5>
+        <Section6 handleClick={this.handleClick}></Section6>
         <button onClick={this.generatePdf}>print</button>
       </div>
     );

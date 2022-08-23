@@ -3,7 +3,9 @@ body {
 }
 
 .App {
-  height: 100vh;
+  /* min-height: 100vh; */
+  width: 100%;
+  max-width: 900px;
   aspect-ratio: 1/1.4142;
   background-color: white;
   margin: 0 auto;
@@ -31,3 +33,25 @@ ul {
   list-style-position: inside;
 }
 
+
+.block {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+
+.primary-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #3b4147;
+}
+
+.hidden-input{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}

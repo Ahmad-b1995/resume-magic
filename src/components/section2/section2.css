@@ -1,0 +1,35 @@
+.section2{
+  margin-top: 1rem;
+}
+
+.job-description {
+  text-align: center;
+}
+
+.dark-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgb(231, 231, 236);
+}
+
+.job-title-container {
+  background-color: rgb(231, 231, 236);
+}
+
+.main-job-title {
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.about-me-container{
+  width: 100%;
+  /* min-height:100px ; */
+  /* height: 100%; */
+  resize: none;
+  margin-top: 1rem;
+}
