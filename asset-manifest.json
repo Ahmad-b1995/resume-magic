@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/resume-magic/static/css/main.a42859bc.css",
+    "main.js": "/resume-magic/static/js/main.a3ab8983.js",
+    "index.html": "/resume-magic/index.html",
+    "main.a42859bc.css.map": "/resume-magic/static/css/main.a42859bc.css.map",
+    "main.a3ab8983.js.map": "/resume-magic/static/js/main.a3ab8983.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a42859bc.css",
+    "static/js/main.a3ab8983.js"
+  ]
+}
