@@ -167,6 +167,7 @@ export default class pdfService {
           },
           layout: "noBorders",
         },
+        
       ],
       pageMargins: 25,
       styles: {
