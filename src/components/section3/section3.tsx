@@ -13,37 +13,37 @@ export default class Section3 extends Component<any> {
             className="hidden-input"
             type="text"
             placeholder="JOB TITLE"
-            onChange={(e) => this.props.handleClick("jobTitle", e.target.value)}
+            onChange={(e) => this.props.inputChange("jobTitle", e.target.value)}
           ></input>
           <input
             className="hidden-input"
             type="text"
             placeholder="JOB TITLE"
-            onChange={(e) => this.props.handleClick("jobTitle", e.target.value)}
+            onChange={(e) => this.props.inputChange("jobTitle", e.target.value)}
           ></input>
           <input
             className="hidden-input"
             type="text"
             placeholder="JOB TITLE"
-            onChange={(e) => this.props.handleClick("jobTitle", e.target.value)}
+            onChange={(e) => this.props.inputChange("jobTitle", e.target.value)}
           ></input>
           <input
             className="hidden-input"
             type="text"
             placeholder="JOB TITLE"
-            onChange={(e) => this.props.handleClick("jobTitle", e.target.value)}
+            onChange={(e) => this.props.inputChange("jobTitle", e.target.value)}
           ></input>
           <input
             className="hidden-input"
             type="text"
             placeholder="JOB TITLE"
-            onChange={(e) => this.props.handleClick("jobTitle", e.target.value)}
+            onChange={(e) => this.props.inputChange("jobTitle", e.target.value)}
           ></input>
           <input
             className="hidden-input"
             type="text"
             placeholder="JOB TITLE"
-            onChange={(e) => this.props.handleClick("jobTitle", e.target.value)}
+            onChange={(e) => this.props.inputChange("jobTitle", e.target.value)}
           ></input>
         </div>
       </div>

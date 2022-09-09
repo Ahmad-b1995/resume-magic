@@ -10,14 +10,14 @@ export default class Section2 extends Component<any> {
             className="main-job-title primary-title"
             type="text"
             placeholder="JOB TITLE"
-            onChange={(e) => this.props.handleClick("jobTitle", e.target.value)}
+            onChange={(e) => this.props.inputChange("jobTitle", e.target.value)}
           ></input>
           <input
             className="job-description hidden-input"
             type="text"
             placeholder="Front-End Development"
             onChange={(e) =>
-              this.props.handleClick("SecondaryJobTitle", e.target.value)
+              this.props.inputChange("SecondaryJobTitle", e.target.value)
             }
           ></input>
         </div>
@@ -30,7 +30,7 @@ export default class Section2 extends Component<any> {
             never-ending endeavor for me. I have always been an excellent
             collaborative team player and an outstanding communicator"
           rows={4}
-          onChange={(e) => this.props.handleClick("aboutMe", e.target.value)}
+          onChange={(e) => this.props.inputChange("aboutMe", e.target.value)}
         ></textarea>
       </div>
     );

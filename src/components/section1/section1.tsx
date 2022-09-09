@@ -10,7 +10,7 @@ export default class Section1 extends Component<any> {
             type="text"
             className="name"
             placeholder="Name Lastname"
-            onChange={(e) => this.props.handleClick("name", e.target.value)}
+            onChange={(e) => this.props.inputChange("name", e.target.value)}
           />
           <ul className="socialmedia-list">
             <li>
@@ -19,7 +19,7 @@ export default class Section1 extends Component<any> {
                 type="text"
                 placeholder="country, state"
                 onChange={(e) =>
-                  this.props.handleClick("country", e.target.value)
+                  this.props.inputChange("country", e.target.value)
                 }
               />
             </li>
@@ -29,7 +29,7 @@ export default class Section1 extends Component<any> {
                 type="text"
                 placeholder="website.com"
                 onChange={(e) =>
-                  this.props.handleClick("website", e.target.value)
+                  this.props.inputChange("website", e.target.value)
                 }
               />
             </li>
@@ -39,7 +39,7 @@ export default class Section1 extends Component<any> {
                 type="text"
                 placeholder="LinkedIn"
                 onChange={(e) =>
-                  this.props.handleClick("linkedIn", e.target.value)
+                  this.props.inputChange("linkedIn", e.target.value)
                 }
               />
             </li>
@@ -49,7 +49,7 @@ export default class Section1 extends Component<any> {
                 type="text"
                 placeholder="github"
                 onChange={(e) =>
-                  this.props.handleClick("github", e.target.value)
+                  this.props.inputChange("github", e.target.value)
                 }
               />
             </li>
@@ -59,7 +59,7 @@ export default class Section1 extends Component<any> {
                 type="text"
                 placeholder="email"
                 onChange={(e) =>
-                  this.props.handleClick("email", e.target.value)
+                  this.props.inputChange("email", e.target.value)
                 }
               />
             </li>
@@ -69,7 +69,7 @@ export default class Section1 extends Component<any> {
                 type="text"
                 placeholder="phoneNumber"
                 onChange={(e) =>
-                  this.props.handleClick("phoneNumber", e.target.value)
+                  this.props.inputChange("phoneNumber", e.target.value)
                 }
               />
             </li>
